@@ -132,8 +132,16 @@ h1 {
 </div>
 
 <script>
-function joinParty() {
+async function joinParty() {
     document.getElementById("confirmation").style.display = "block";
+
+    try {
+        await fetch("/api/notify", {
+            method: "POST"
+        });
+    } catch (error) {
+        console.error("Notification failed");
+    }
 }
 </script>
 

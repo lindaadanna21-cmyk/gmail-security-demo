@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>An Exclusive Celebration</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px 15px;
+    background: #fdfbf7;
+    font-family: Georgia, serif;
+    color: #333;
+    text-align: center;
+}
+
+.invitation {
+    max-width: 480px;
+    margin: 30px auto;
+    padding: 45px 25px;
+    background: white;
+    border: 2px solid #c5a45b;
+    outline: 5px solid #f5eddb;
+    box-shadow: 0 8px 30px #00000012;
+}
+
+.top {
+    color: #b08d43;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+h1 {
+    color: #b08d43;
+    font-size: 35px;
+    line-height: 1.4;
+    margin: 30px 0;
+}
+
+.line {
+    width: 80px;
+    height: 2px;
+    background: #c5a45b;
+    margin: 25px auto;
+}
+
+.message {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 28px;
+    background: #b08d43;
+    color: white;
+    border: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #947332;
+}
+
+#confirmation {
+    display: none;
+    margin-top: 25px;
+    color: #947332;
+    line-height: 1.8;
+}
+
+.footer {
+    margin-top: 40px;
+    color: #b08d43;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="invitation">
+
+    <div class="top">YOU ARE CORDIALLY INVITED</div>
+
+    <div class="line"></div>
+
+    <h1>AN EXCLUSIVE<br>CELEBRATION</h1>
+
+    <div class="line"></div>
+
+    <p class="message">
+        You are warmly invited to join us
+        for a special celebration filled
+        with beautiful moments, happiness
+        and unforgettable memories.
+    </p>
+
+    <p class="message">
+        We would be delighted to have
+        you share this special experience.
+    </p>
+
+    <button class="button" onclick="joinParty()">
+        JOIN THE CELEBRATION
+    </button>
+
+    <div id="confirmation">
+        <h3>Thank You! ✨</h3>
+        We look forward to celebrating with you.
+    </div>
+
+    <div class="footer">
+        A SPECIAL CELEBRATION AWAITS
+    </div>
+
+    <p style="font-size:11px;color:#888;margin-top:25px;">
+        Clicking the button records an anonymous interaction.
+    </p>
+
+</div>
+
+<script>
+function joinParty() {
+    document.getElementById("confirmation").style.display = "block";
+}
+</script>
+
+</body>
+</html>
